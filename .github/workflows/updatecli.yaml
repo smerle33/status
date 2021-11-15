@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - uses: tibdex/github-app-token@v1.5
-        id: generate-token
+        id: generate_token
         with:
           app_id: ${{ secrets.JENKINS_ADMIN_APP_ID }}
           private_key: ${{ secrets.JENKINS_ADMIN_APP_PRIVKEY }}
